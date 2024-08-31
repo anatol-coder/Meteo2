@@ -15,12 +15,13 @@
   <body>
     <div class="weather-app">
       <header>
-        <form class="weather-app-seach-form">
+        <form class="weather-app-seach-form" id="search-form">
           <input
             type="search"
             placeholder="Enter a city..."
             required
             class="weather-app-search-input"
+            id="search-input"
           />
           <input
             type="submit"
@@ -32,11 +33,11 @@
       <main>
         <div class="weather-app-all-data">
           <div class="weather-app-details">
-            <h1>Tbilisi</h1>
+            <h1 id="city">Tbilisi</h1>
             <p>
               Tuesday 7:49, clear sky
               <br />
-              Humidity: <strong>48%</strong>, Wind: <strong>1.03km/h</strong>
+              Humidity:<strong>48%</strong>, Wind:<strong>1.03km/h</strong>
             </p>
           </div>
           <div class="weather-app-temperature">
@@ -61,5 +62,6 @@
         >
       </footer>
     </div>
+    <script src="src/app.js"></script>
   </body>
 </html>
