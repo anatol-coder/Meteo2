@@ -13,6 +13,7 @@ function updateWeather(response) {
   let timeElement = document.querySelector("#time");
   let date = new Date(response.data.time * 1000);
   timeElement.innerHTML = formatDate(date);
+  let iconElement = document.querySelector("#icon");
 }
 
 function formatDate(date) {

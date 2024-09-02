@@ -36,8 +36,7 @@
           <div class="weather-app-details">
             <h1 id="city"></h1>
             <p>
-              <span id="time">Tuesday 7:49</span>,
-              <span id="description"></span>
+              <span id="time">Tuesday 7:49</span>,<span id="description"></span>
               <br />
               Humidity:<strong id="humidity">48%</strong>, Wind:<strong
                 id="wind-speed"
@@ -46,10 +45,13 @@
             </p>
           </div>
           <div class="weather-app-temperature">
-            <div class="weather-app-temperature-icon">🌤️</div>
-            <div class="weather-app-temperature-value" id="temperature"></div>
-            <div class="weather-app-temperature-unit">℃</div>
+            <img
+              src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png"
+              class="weather-app-temperature-icon"
+            />
           </div>
+          <div class="weather-app-temperature-value" id="temperature"></div>
+          <div class="weather-app-temperature-unit">℃</div>
         </div>
       </main>
       <footer>
