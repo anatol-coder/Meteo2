@@ -3,12 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="src/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-      rel="stylesheet"
     />
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <title>Meteo2 App</title>
@@ -36,19 +35,22 @@
           <div class="weather-app-details">
             <h1 id="city"></h1>
             <p>
-              <span id="time">Tuesday 7:49</span>,<span id="description"></span>
-              <br />
-              Humidity:<strong id="humidity">48%</strong>, Wind:<strong
-                id="wind-speed"
-                >1.03km/h</strong
-              >
+              <span class="time-and-conditions">
+                <span id="time"></span> <span id="description"></span>
+                <br />
+                Humidity:<strong id="humidity"></strong>Wind:<strong
+                  id="wind-speed"
+                ></strong>
+              </span>
             </p>
           </div>
           <div class="weather-app-temperature">
-            <img
-              src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png"
-              class="weather-app-temperature-icon"
-            />
+            <div id="icon">
+              <img
+                src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png"
+                class="weather-app-temperature-icon"
+              />
+            </div>
           </div>
           <div class="weather-app-temperature-value" id="temperature"></div>
           <div class="weather-app-temperature-unit">℃</div>
@@ -59,9 +61,9 @@
         <a href="https://github.com/anatol-coder" target="_blank">
           Anna Wysota
         </a>
-        ,
+        , is
         <a href="https://github.com/anatol-coder/Meteo2" target="_blank">
-          is open-sourced on GitHub</a
+          open-sourced on GitHub</a
         >
         and
         <a href="https://meteo2-anatols-app.netlify.app" target="_blank"
