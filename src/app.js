@@ -16,8 +16,7 @@ function updateWeather(response) {
   let icon = document.querySelector("#icon");
   icon.innerHTML = `<img
       src="${response.data.condition.icon_url}"
-      class="weather-app-temperature-icon"    />
-  )`;
+      class="weather-app-temperature-icon"    />`;
 }
 
 function formatDate(date) {
